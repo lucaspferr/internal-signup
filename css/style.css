@@ -1,3 +1,5 @@
+/* ---------- GENERAL ---------- */
+
 body, h1{
     margin: 0px;
     padding: 0px;
@@ -17,103 +19,9 @@ body{
     margin-top: 5vh;
 }
 
-.signup-input{
-    display: flex;
+button{
     font-family: "Nunito", Helvetica, Arial, sans-serif;
-    background: #FFFFFF;
-    border: 2px solid #AAAAAA;
-    border-radius: 4px;
-    font-size: 1em;
-    height: 2em;
-    color: #767676;
-}
-
-
-
-.rectangle-content{
-    max-width: 660px;
-    max-height: 763px;
-    flex-direction: column;
-    margin: 0 auto;
-    background: white;
-    padding-bottom: 50px;
-    border-radius: 20px;
-}
-
-.rectangle-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-img{
-    max-width: 213px;
-    padding-bottom: 20px;
-}
-
-.register{
-    background: #0DBDBD;
-    border-radius: 10px;
-    border-color: transparent;
     color: white;
-    font-size: 1em;
-    height: 2em;
-}
-
-.form-group{
-    display: flex;
-}
-
-.g1{
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    max-width: 100%; 
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-right: 35px;
-}
-
-.signup-label{
-    font-size: 0.825em;
-    margin-bottom: 4px;
-    margin-top: 40px;
-}
-
-.form-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0px 35px 0px;
-    margin-right: 35px;
-}
-
-#email, #fullname, #password, #phone, #birthdate{
-    margin-bottom: 18.4px;
-}
-
-.g2{
-    flex-grow: 2;
-    padding-right: 25px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-}
-
-.g3{
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.form-check-register{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 35px 5px;
-    margin-right: 35px;
 }
 
 span{
@@ -126,8 +34,151 @@ input:invalid ~ span{
     display: none;
 }
 
+/* ---------- MAIN CONTAINER ---------- */
+
+.rectangle-content{
+    max-width: 660px;
+    max-height: 763px;
+    flex-direction: column;
+    margin: 0 auto;
+    background: white;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+
+.rectangle-content-sucess{
+    display: flex;
+    max-width: 660px;
+    height: 70vh;
+    flex-direction: column;
+    margin: 15vh auto;
+    background: white;
+    border-radius: 20px;
+}
+
+/* ---------- CONTAINER HEADER ---------- */
+
+.rectangle-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.rectangle-header-sucess{
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.goback-button{
+    background: #0DBDBD;
+    border-radius: 10px;
+    border-color: transparent;
+    font-size: 2.25em;
+    height: 4em;
+    width: 7em;
+}
+
+img{
+    max-width: 213px;
+    padding-bottom: 20px;
+}
+
+/* ---------- FORM CONTAINER ---------- */
+
+.signup-input{
+    display: flex;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    background: #FFFFFF;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+    font-size: 1em;
+    height: 2em;
+    color: #767676;
+}
+
+.form-group{
+    display: flex;
+}
+
+.signup-label{
+    font-size: 0.825em;
+    margin-bottom: 4px;
+    margin-top: 40px;
+}
+
+#email, #fullname, #password, #phone, #birthdate{
+    margin-bottom: 18.4px;
+}
+
+/* ---------- FORM SECTION I ---------- */
+
+.g1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 100%; 
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: 35px;
+}
+
+/* ---------- FORM SECTION II & III CONTAINER ---------- */
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 35px 0px;
+    margin-right: 35px;
+}
+
+/* ---------- FORM SECTION II ---------- */
+
+.g2{
+    flex-grow: 2;
+    padding-right: 25px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+/* ---------- FORM SECTION III ---------- */
+
+.g3{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* ---------- FORM TERMS & SUBMIT ---------- */
+
+.register{
+    background: #0DBDBD;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    font-size: 1em;
+    height: 2.5em;
+    width: 5em;
+}
+
+.form-check-register{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px 5px;
+    margin-right: 35px;
+}
+
 .signup-label-register{
     color: #111111;
+    text-shadow: -2px 1px 4px #767676;
 }
 
 #terms{
@@ -135,6 +186,8 @@ input:invalid ~ span{
     border: 2px solid #0DBDBD;
     border-radius: 2px;
 }
+
+/* ---------- MEDIA SETTINGS ---------- */
 
 @media (max-width: 768px){
     body{
@@ -230,5 +283,11 @@ input:invalid ~ span{
         width: 90vw;
         height: 8vh;
       }
+
+      .goback-button{
+        margin-top: 1em;
+        height: 5rem;
+        width: 8em;
+    }
 
 }
